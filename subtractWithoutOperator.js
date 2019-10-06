@@ -17,3 +17,5 @@ function sub(a, b) {
       }
     }
   }
+
+  sub(10, 45);

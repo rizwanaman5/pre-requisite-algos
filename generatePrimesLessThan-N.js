@@ -14,3 +14,5 @@ function generatePrime(num) {
         }
     }
 }
+
+generatePrime(20)
