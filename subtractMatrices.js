@@ -40,12 +40,15 @@ const verifyMatrice = () => {
 // verifyMatrice()
 
 const addMatrice = () => {
+
     if (verifyMatrice()) {
+
         matrice.map((e, index) => {
             result.push(
                 e.map((x, index2) => x - matrice2[index][index2])
             )
         })
+
         console.log('sum ->', result)
     }
 }
