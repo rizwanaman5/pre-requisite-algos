@@ -20,16 +20,15 @@ console.log(numArr)
 let arrPow = numArr.map(e => Number(e) ** numArr.length)
 console.log(arrPow)
 
-let arr = arrPow
 let sum = 0
 
 // Adding up all the elements of the array 
-arr.map((e) => {
+arrPow.map((e) => {
     sum += e
 })
 
 // Checking whether the sum equals the original number or not. If so, it is an Armstrong Number.
-const checkArmstrongNum = () => {
+const checkNarcissisticNum = () => {
     if (sum == num) {
         console.log('congratulations, you have got a Narcissistic number ->', num)
     } else {
@@ -37,4 +36,4 @@ const checkArmstrongNum = () => {
     }
 }
 
-checkArmstrongNum()
+checkNarcissisticNum()
