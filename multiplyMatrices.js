@@ -1,4 +1,5 @@
 // Write a program to multiply given 2 matrices | provided the matrices follow proper rules
+
 /**
  * matrice multiplication has a lot of rules. one can only multiply matrices of certain dimensions
  * for a meaningful product, the number of columns in the first matrice is equal to the number of rows in the second
@@ -6,8 +7,15 @@
  * but you can multiply a 2x3 matrice with a 3x2 matricel, and the result will be a 2x2 matrice.
  */
 
-let matrice = [[1, 2], [3, 4], [5, 6]]
-let matrice2 = [[1, 6, 2], [4, 5, 6]]
+let matrice = [
+    [1, 2],
+    [3, 4], 
+    [5, 6]
+]
+let matrice2 = [
+    [1, 6, 2], 
+    [4, 5, 6]
+]
 
 // This is the resulting matrice after the addition
 let result = []
