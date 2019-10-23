@@ -2,11 +2,13 @@ let matrice = [
     [1, 0, 0, 0],
     [0, 1, 0, 0],
     [0, 0, 1, 0],
-    [0, 0, 0, 1]
+    [1, 0, 0, 1]
 ]
 
 let sumMainDiagonal = 0;
 let sumSecDiagonal = 0;
+let sumCol = [];
+let sumRow = [];
 
 // to check the dimensions of the matrice. if they are not the same, the matchMatrice function won't be executed at all
 const verifyMatrice = () => {
@@ -33,7 +35,19 @@ const mainDiagonal = () => {
             sumMainDiagonal += val[index]
         })
     })
-    return sumMainDiagonal/4
+    return sumMainDiagonal / 4
     // console.log(sumMainDiagonal/4)
 }
-console.log(mainDiagonal())
+// console.log(mainDiagonal())
+
+const secDiagonal = () => {
+    for (let i = matrice.length; i > 0; i--) {
+        // console.log('first',matrice[i])
+        for (let j = 0; j < i.length; j++) {
+            // sumSecDiagonal += matrice[i][i]
+            console.log('sec', matrice)
+        }
+    }
+    // return sumSecDiagonal / 4
+}
+console.log(secDiagonal())
