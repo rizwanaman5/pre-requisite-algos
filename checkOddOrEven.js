@@ -1,4 +1,4 @@
-// Write a program to given input Check whether  Even or odd.
+// Write a program to Check whether a given input is Even or odd using recursion
 function check(num) {
     if (num > 1) {
         num = num - 2;
